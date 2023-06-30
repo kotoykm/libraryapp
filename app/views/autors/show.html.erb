@@ -5,6 +5,7 @@
 <div>
   <%= link_to "Edit this autor", edit_autor_path(@autor) %> |
   <%= link_to "Back to autors", autors_path %>
+  <%= link_to "Ver libros del autor", autor_books_path(@autor.id) %>
 
   <%= button_to "Destroy this autor", @autor, method: :delete %>
 </div>
